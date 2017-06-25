@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chihua Ma</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet/less" href="styles.less">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Chihua Ma</h1>
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li><a data-toggle="tab" href="#projects">Projects</a></li>
+      <li><a data-toggle="tab" href="#publications">Publications</a></li>
+      <li><a data-toggle="tab" href="#aboutMe">About Me</a></li>
+      <li><a data-toggle="tab" href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div id="projects" class="tab-pane fade">
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div data-toggle="collapse" data-target="#collapse1" class="panel-heading projectPanel">
+              <div class="projectThumb">
+                <img class="projectPreview" src="img/project/SMARTER.png" alt="SMARTer Therapy Explorer">
+              </div>
+              <div class="projectText">
+                <div class="projectTitle">
+                  SMARTer UI
+                </div>
+                <div class="projectInfo">
+                  This is one sentence about the SMARTer UI.
+                </div>
+              </div>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body projectDesc">
+                The computational study of the dynamic and stochastic natures of gene regulatory networks is a challenging topic in systems biology. Visualizing ensemble time-evolving probability landscapes of stochastic gene networks can further biologists’ understanding of phenotypic behavior associated with specific genes. We present a web-based visual analysis tool for the exploration of peak distributions over state space and simulation time in such stochastic networks, and the comparison of peak distributions between multiple simulations. Our approach combines multiple linked views to capture ensemble time-evolving probability landscapes. A peak trajectory cube provides users an overview of peak spatiotemporal distributions between six simulations. A peak projection map shows the exact peak locations of multiple simulations at the user selected time. At a more detailed level, users can inspect a particular state in the peak projection map to view for each simulation both the probability values over time, and the local probability landscape shapes. This information is displayed in a small multiple using two glyphs: profile glyphs and arrow glyphs. The arrow glyph indicates that a state is a peak when all the glyph eight arrows point towards the glyph center. In the figure, a disagreement between the arrow glyphs and the peak projection map demonstrates that probability distributions over genes in this system are not independent of each other. Our visual analysis tool allows bioinformatics researchers to explore and compare the time evolving changes of probability landscapes from multiple simulations efficiently, without running many small scripts and computing all characteristics separately.
+              </div>
+              <div class="panel-footer projectLink">
+                <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div data-toggle="collapse" data-target="#collapse2" class="panel-heading projectPanel">
+              <div class="projectThumb">
+                <img class="projectPreview" src="img/project/SMARTER.png" alt="SMARTer Therapy Explorer">
+              </div>
+              <div class="projectText">
+                <div class="projectTitle">
+                  SMARTer UI
+                </div>
+                <div class="projectInfo">
+                  This is one sentence about the SMARTer UI.
+                </div>
+              </div>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body projectDesc">
+                The computational study of the dynamic and stochastic natures of gene regulatory networks is a challenging topic in systems biology. Visualizing ensemble time-evolving probability landscapes of stochastic gene networks can further biologists’ understanding of phenotypic behavior associated with specific genes. We present a web-based visual analysis tool for the exploration of peak distributions over state space and simulation time in such stochastic networks, and the comparison of peak distributions between multiple simulations. Our approach combines multiple linked views to capture ensemble time-evolving probability landscapes. A peak trajectory cube provides users an overview of peak spatiotemporal distributions between six simulations. A peak projection map shows the exact peak locations of multiple simulations at the user selected time. At a more detailed level, users can inspect a particular state in the peak projection map to view for each simulation both the probability values over time, and the local probability landscape shapes. This information is displayed in a small multiple using two glyphs: profile glyphs and arrow glyphs. The arrow glyph indicates that a state is a peak when all the glyph eight arrows point towards the glyph center. In the figure, a disagreement between the arrow glyphs and the peak projection map demonstrates that probability distributions over genes in this system are not independent of each other. Our visual analysis tool allows bioinformatics researchers to explore and compare the time evolving changes of probability landscapes from multiple simulations efficiently, without running many small scripts and computing all characteristics separately.
+              </div>
+              <div class="panel-footer projectLink">
+                <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div data-toggle="collapse" data-target="#collapse3" class="panel-heading projectPanel">
+              <div class="projectThumb">
+                <img class="projectPreview" src="img/project/SMARTER.png" alt="SMARTer Therapy Explorer">
+              </div>
+              <div class="projectText">
+                <div class="projectTitle">
+                  SMARTer UI
+                </div>
+                <div class="projectInfo">
+                  This is one sentence about the SMARTer UI.
+                </div>
+              </div>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body projectDesc">
+                The computational study of the dynamic and stochastic natures of gene regulatory networks is a challenging topic in systems biology. Visualizing ensemble time-evolving probability landscapes of stochastic gene networks can further biologists’ understanding of phenotypic behavior associated with specific genes. We present a web-based visual analysis tool for the exploration of peak distributions over state space and simulation time in such stochastic networks, and the comparison of peak distributions between multiple simulations. Our approach combines multiple linked views to capture ensemble time-evolving probability landscapes. A peak trajectory cube provides users an overview of peak spatiotemporal distributions between six simulations. A peak projection map shows the exact peak locations of multiple simulations at the user selected time. At a more detailed level, users can inspect a particular state in the peak projection map to view for each simulation both the probability values over time, and the local probability landscape shapes. This information is displayed in a small multiple using two glyphs: profile glyphs and arrow glyphs. The arrow glyph indicates that a state is a peak when all the glyph eight arrows point towards the glyph center. In the figure, a disagreement between the arrow glyphs and the peak projection map demonstrates that probability distributions over genes in this system are not independent of each other. Our visual analysis tool allows bioinformatics researchers to explore and compare the time evolving changes of probability landscapes from multiple simulations efficiently, without running many small scripts and computing all characteristics separately.
+              </div>
+              <div class="panel-footer projectLink">
+                <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="publications" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="aboutMe" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="contact" class="tab-pane fade">
+        <div class="panel panel-info" id="contactPanel">
+          <div class="panel-heading">Contact Me</div>
+          <div class="panel-body">
+            <h4><span class="glyphicon glyphicon-envelope"></span> chma87@gmail.com</h4>
+            <h4><img class="contactIcon" src="img/logo/github.png" alt="Github: "> <a href="https://github.com/chihuama">chihuama</a></h4>
+            <h4><img class="contactIcon" src="img/logo/linkedin.png" alt="LinkedIn: "> <a href="https://www.linkedin.com/in/chihua-ma-47610317/">Chihua Ma</a></h4>
+            <h4></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
