@@ -104,6 +104,17 @@ html {
   margin: 10px;
 }
 
+
+.projectTeam {
+  &:before {
+    content: "Team: ";
+    font-weight: bolder;
+    display: inline-block;
+  }
+
+  margin-bottom: 10px;
+}
+
 .projectDesc {
   &:before {
     content: "About: ";
@@ -111,9 +122,17 @@ html {
   }
 }
 
-.projectLink {
+.projectTool {
   &:before {
     content: "Link: ";
+    font-weight: bolder;
+    display: inline-block;
+  }
+}
+
+.projectPubl {
+  &:before {
+    content: "Paper: ";
     font-weight: bolder;
     display: inline-block;
   }
