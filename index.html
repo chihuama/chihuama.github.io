@@ -27,52 +27,51 @@
       <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
       <li><a data-toggle="tab" href="#projects">Projects</a></li>
       <li><a data-toggle="tab" href="#publications">Publications</a></li>
-      <li><a data-toggle="tab" href="#aboutMe">About Me</a></li>
+      <li><a data-toggle="tab" href="#aboutMe">Gallery</a></li>
       <li><a data-toggle="tab" href="#contact">Contact</a></li>
     </ul>
 
     <div class="tab-content">
       <div id="home" class="tab-pane fade in active">
-        <h3>Bio</h3>
-        <p>My name is Chihua Ma (<strong>马驰华</strong>), meaning a little horse running around China.</p>
-        <br>
-        <p>I am currently a <strong>Ph.D. candidate</strong> in the <a href="https://www.evl.uic.edu/">Electronic Visualization Lab</a> at University of Illinois at Chicago (UIC).
-          My advisors are <a href="https://www.cs.uic.edu/Kenyon/">Dr. Robert Kenyon</a> and <a href="https://www.evl.uic.edu/marai/">Dr. G. Elisabeta (Liz) Marai</a>.</p>
-        <br>
-        <p>I received my M.S. degree in Electrical and Computer Engineering from UIC in 2011, and B.S. degree in Computer Science and Technology from Nankai University in 2009.</p>
-        <br>
-        <p>My CV can be found <a href="pdf/Resume.pdf">here</a></p>
+        <div class="col-md-8">
+          <h3>Bio</h3>
+          <p>My name is Chihua Ma (<strong>马驰华</strong>), meaning a little horse running around China.</p>
+          <br>
+          <p>I am currently a <strong>Ph.D. candidate</strong> in the <a href="https://www.evl.uic.edu/">Electronic Visualization Lab</a> at University of Illinois at Chicago (UIC). My advisors are <a href="https://www.cs.uic.edu/Kenyon/">Dr. Robert Kenyon</a>          and <a href="https://www.evl.uic.edu/marai/">Dr. G. Elisabeta (Liz) Marai</a>.</p>
+          <br>
+          <p>I received my M.S. degree in Electrical and Computer Engineering from UIC in 2011, and B.S. degree in Computer Science and Technology from Nankai University in 2009.</p>
+          <br>
+          <p>My CV can be found <a href="pdf/Resume.pdf">here</a></p>
+        </div>
+        <div class="col-md-4">
+          <img src="./img/me-beijing.jpg" alt="Me" style="width: 90%;">
+        </div>
       </div>
       <div id="projects" class="tab-pane fade">
         <div class="panel-group">
           <div class="panel panel-default">
             <div data-toggle="collapse" data-target="#collapse1" class="panel-heading projectPanel">
               <div class="projectThumb">
-                <img class="projectPreview" src="img/project/SMARTER.png" alt="SMARTer Therapy Explorer">
+                <img class="projectPreview" src="img/project/SMARTer.png" alt="SMARTer Therapy Explorer">
               </div>
               <div class="projectText">
                 <div class="projectTitle">
                   SMARTer UI
                 </div>
                 <div class="projectInfo">
-                  This is one sentence about the SMARTer UI.
+                  A web-based visual therapy explorer that enables the systematic similarity-based exploration and analysis of individual factors in the patient repository to guide precision therapy.
                 </div>
               </div>
             </div>
             <div id="collapse1" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="projectTeam">
-                  Me, you, another person
+                  Chihua Ma, Andrew Burks, Filippo Pellolio, and Liz Marai
                 </div>
                 <div class="projectDesc">
-                  The computational study of the dynamic and stochastic natures of gene regulatory networks is a challenging topic in systems biology. Visualizing ensemble time-evolving probability landscapes of stochastic gene networks can further biologists’ understanding
-                  of phenotypic behavior associated with specific genes. We present a web-based visual analysis tool for the exploration of peak distributions over state space and simulation time in such stochastic networks, and the comparison of peak
-                  distributions between multiple simulations. Our approach combines multiple linked views to capture ensemble time-evolving probability landscapes. A peak trajectory cube provides users an overview of peak spatiotemporal distributions
-                  between six simulations. A peak projection map shows the exact peak locations of multiple simulations at the user selected time. At a more detailed level, users can inspect a particular state in the peak projection map to view for each
-                  simulation both the probability values over time, and the local probability landscape shapes. This information is displayed in a small multiple using two glyphs: profile glyphs and arrow glyphs. The arrow glyph indicates that a state
-                  is a peak when all the glyph eight arrows point towards the glyph center. In the figure, a disagreement between the arrow glyphs and the peak projection map demonstrates that probability distributions over genes in this system are not
-                  independent of each other. Our visual analysis tool allows bioinformatics researchers to explore and compare the time evolving changes of probability landscapes from multiple simulations efficiently, without running many small scripts
-                  and computing all characteristics separately.
+                  We present the design and evaluation of an integrated problem solving environment for cancer therapy analysis. The environment intertwines a statistical martingale model and a K Nearest Neighbor approach with visual encodings, including novel interactive
+                  nomograms, in order to compute and explain a patient's probability of survival as a function of similar patient results. A coordinated views paradigm enables exploration of the multivariate, heterogeneous and few-valued data from a large
+                  head and neck cancer repository. A visual scaffolding approach further enables users to build from familiar representations to unfamiliar ones.
                 </div>
               </div>
               <div class="panel-footer">
@@ -80,7 +79,8 @@
                   <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a>
                 </div>
                 <div class="projectPubl">
-                  <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a>
+                  <!-- <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a> -->
+                  under review
                 </div>
               </div>
             </div>
@@ -91,36 +91,36 @@
           <div class="panel panel-default">
             <div data-toggle="collapse" data-target="#collapse2" class="panel-heading projectPanel">
               <div class="projectThumb">
-                <img class="projectPreview" src="img/project/PRODIGEN_400x300.png" alt="PRODIGEN">
+                <img class="projectPreview" src="img/project/RemBrain.PNG" alt="RemBrain">
               </div>
               <div class="projectText">
                 <div class="projectTitle">
-                  PRODIGEN
+                  RemBrain
                 </div>
                 <div class="projectInfo">
-                  Visualizing the complex probability landscape of stochastic gene regulatory networks can further biologists' understanding of phenotypic behavior associated with specific genes.
+                  A web-based visual analytics tool to explore and compare multiple dynamic brain activity networks with multivariate features
                 </div>
               </div>
             </div>
             <div id="collapse2" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="projectTeam">
-                  C. Ma, T. Luciani, A. Terebus, J. Liang, and G. E. Marai
+                  Chihua Ma, Filippo Pellolio, Robert Kenyon, and Liz Marai
                 </div>
                 <div class="projectDesc">
-                  We present PRODIGEN (PRObability DIstribution of GEne Networks), a web-based visual analysis tool for the systematic exploration of probability distributions over simulation time and state space in such networks. PRODIGEN was designed in collaboration
-                  with bioinformaticians who research stochastic gene networks. The analysis tool combines in a novel way existing, expanded, and new visual encodings to capture the time-varying characteristics of probability distributions: spaghetti
-                  plots over one dimensional projection, heatmaps of distributions over 2D projections, enhanced with overlaid time curves to display temporal changes, and novel individual glyphs of state information corresponding to particular peaks.
-                  We demonstrate the effectiveness of the tool through two case studies on the computed probabilistic landscape of a gene regulatory network and of a toggle-switch network. Domain expert feedback indicates that our visual approach can
-                  help biologists: 1) visualize probabilities of stable states, 2) explore the temporal probability distributions, and 3) discover small peaks in the probability landscape that have potential relation to specific diseases.
+                  We introduce a web-based visual comparison approach for the systematic exploration of dynamic activation networks across biological datasets. Understanding the dynamics of such networks in the context of demographic factors like age is a fundamental problem
+                  in computational systems biology and neuroscience. We design visual encodings for the dynamic and community characteristics of these temporal networks. Our multi-scale approach blends nested mosaic matrices that capture temporal characteristics
+                  of the data, spatial views of the network data, Kiviat diagrams and mirror glyphs that detail the temporal behavior and community assignment of specific nodes. A top design specifically targeted at pairwise visual comparison further
+                  supports the comparative analysis of multiple dataset activations.
                 </div>
               </div>
               <div class="panel-footer">
                 <div class="projectTool">
-                  <a href="http://uic-evl.github.io/BioinformaticsVis2016/">http://uic-evl.github.io/BioinformaticsVis2016/</a>
+                  <a href="http://chihuama.com/RemBrain/">http://chihuama.com/RemBrain/</a>
                 </div>
                 <div class="projectPubl">
-                  <a href="http://uic-evl.github.io/BioinformaticsVis2016/">http://uic-evl.github.io/BioinformaticsVis2016/</a>
+                  <!-- <a href="http://chihuama.com/SMARTER/">http://chihuama.com/SMARTER/</a> -->
+                  under review
                 </div>
               </div>
             </div>
@@ -131,31 +131,67 @@
           <div class="panel panel-default">
             <div data-toggle="collapse" data-target="#collapse3" class="panel-heading projectPanel">
               <div class="projectThumb">
-                <img class="projectPreview" src="img/project/SMARTER.png" alt="SMARTer Therapy Explorer">
+                <img class="projectPreview" src="img/project/EnsembleProb.png" alt="EnsembleProb">
               </div>
               <div class="projectText">
                 <div class="projectTitle">
-                  SMARTer UI
+                  EnsembleProb
                 </div>
                 <div class="projectInfo">
-                  This is one sentence about the SMARTer UI.
+                  A web-based visualization to explore and compare probability spatio-temporal landscapes from multiple simulations
                 </div>
               </div>
             </div>
             <div id="collapse3" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="projectTeam">
-                  Me, you, another person
+                  Chihua Ma, Andrew Burks, and Liz Marai
                 </div>
                 <div class="projectDesc">
-                  The computational study of the dynamic and stochastic natures of gene regulatory networks is a challenging topic in systems biology. Visualizing ensemble time-evolving probability landscapes of stochastic gene networks can further biologists’ understanding
-                  of phenotypic behavior associated with specific genes. We present a web-based visual analysis tool for the exploration of peak distributions over state space and simulation time in such stochastic networks, and the comparison of peak
-                  distributions between multiple simulations. Our approach combines multiple linked views to capture ensemble time-evolving probability landscapes. A peak trajectory cube provides users an overview of peak spatiotemporal distributions
-                  between six simulations. A peak projection map shows the exact peak locations of multiple simulations at the user selected time. At a more detailed level, users can inspect a particular state in the peak projection map to view for each
-                  simulation both the probability values over time, and the local probability landscape shapes. This information is displayed in a small multiple using two glyphs: profile glyphs and arrow glyphs. The arrow glyph indicates that a state
-                  is a peak when all the glyph eight arrows point towards the glyph center. In the figure, a disagreement between the arrow glyphs and the peak projection map demonstrates that probability distributions over genes in this system are not
-                  independent of each other. Our visual analysis tool allows bioinformatics researchers to explore and compare the time evolving changes of probability landscapes from multiple simulations efficiently, without running many small scripts
-                  and computing all characteristics separately.
+                  We present a web-based visual analysis tool for the exploration of peak distributions over state space and simulation time in such stochastic networks, and the comparison of peak distributions between multiple simulations. Our approach combines multiple
+                  linked views to capture ensemble time-evolving probability landscapes. A peak trajectory cube provides users an overview of peak spatiotemporal distributions between six simulations. A peak projection map shows the exact peak locations
+                  of multiple simulations at the user selected time. At a more detailed level, users can inspect a particular state in the peak projection map to view for each simulation both the probability values over time, and the local probability
+                  landscape shapes. This information is displayed in a small multiple using two glyphs: profile glyphs and arrow glyphs. The arrow glyph indicates that a state is a peak when all the glyph eight arrows point towards the glyph center.
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="projectTool">
+                  <a href="http://chihuama.com/EnsembleProb/prototype">http://chihuama.com/EnsembleProb/prototype</a>
+                </div>
+                <div class="projectPubl">
+                  <!-- <a href="http://uic-evl.github.io/BioinformaticsVis2016/">http://uic-evl.github.io/BioinformaticsVis2016/</a> -->
+                  To appear at BioVis 2017 (Poster)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div data-toggle="collapse" data-target="#collapse4" class="panel-heading projectPanel">
+              <div class="projectThumb">
+                <img class="projectPreview" src="img/project/PRODIGEN.png" alt="PRODIGEN">
+              </div>
+              <div class="projectText">
+                <div class="projectTitle">
+                  PRODIGEN
+                </div>
+                <div class="projectInfo">
+                  A web-based visualization of probability distributions in both time and state space of the stochastic gene regulatory networks
+                </div>
+              </div>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="projectTeam">
+                  Chihua Ma, Tim Liciani, and Liz Marai
+                </div>
+                <div class="projectDesc">
+                  Visualizing the complex probability landscape of stochastic gene regulatory networks can further biologists' understanding of phenotypic behavior associated with specific genes. We present PRODIGEN (PRObability DIstribution of GEne Networks), a web-based
+                  visual analysis tool for the systematic exploration of probability distributions over simulation time and state space in such networks. PRODIGEN was designed in collaboration with bioinformaticians who research stochastic gene networks.
+                  The analysis tool combines in a novel way existing, expanded, and new visual encodings to capture the time-varying characteristics of probability distributions: spaghetti plots over one dimensional projection, heatmaps of distributions
+                  over 2D projections, enhanced with overlaid time curves to display temporal changes, and novel individual glyphs of state information corresponding to particular peaks.
                 </div>
               </div>
               <div class="panel-footer">
@@ -163,12 +199,52 @@
                   <a href="http://uic-evl.github.io/BioinformaticsVis2016/">http://uic-evl.github.io/BioinformaticsVis2016/</a>
                 </div>
                 <div class="projectPubl">
-                  <a href="http://uic-evl.github.io/BioinformaticsVis2016/">http://uic-evl.github.io/BioinformaticsVis2016/</a>
+                  <a href="https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-016-1447-1?site=bmcbioinformatics.biomedcentral.com">BMC Imformatics</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div data-toggle="collapse" data-target="#collapse5" class="panel-heading projectPanel">
+              <div class="projectThumb">
+                <img class="projectPreview" src="img/project/SwordPlots.jpg" alt="SwordaPlots">
+              </div>
+              <div class="projectText">
+                <div class="projectTitle">
+                  SwordPlots
+                </div>
+                <div class="projectInfo">
+                  ...
+                </div>
+              </div>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="projectTeam">
+                  Chihua Ma, Angus Forbus, and Robert Kenyon
+                </div>
+                <div class="projectDesc">
+                  Study of the behavior of individual members in communities of dynamic networks can help neuroscientists to understand how interactions between neurons in brain networks change over time. Visualization of those temporal features is challenging, especially
+                  for networks embedded within spatial structures, such as brain networks. In this article, the authors present the design of SwordPlots, an interactive multi-view visualization system to assist neuroscientists in their exploration of
+                  dynamic brain networks from multiple perspectives. Their visualization helps neuroscientists to understand how the functional behavior of the brain changes over time, how such behaviors are related to the spatial structure of the brain,
+                  and how communities of neurons with similar functionality evolve over time.
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="projectTool">
+                  <a href="https://sites.google.com/site/dybrainviz/home">https://sites.google.com/site/dybrainviz/home</a>
+                </div>
+                <div class="projectPubl">
+                  <a href="http://www.ingentaconnect.com/contentone/ist/ei/2016/00002016/00000016/art00051?crawler=true">JIST</a> <strong>Charles E. Ives Journal Award</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div id="publications" class="tab-pane fade">
         <h4>Journal Publications</h4>
