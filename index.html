@@ -25,12 +25,30 @@
       background: radial-gradient(1200px 420px at 10% 0%, #e0d7c6 0%, var(--bg) 62%);
       color: var(--text);
       line-height: 1.55;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      height: 34vh;
+      pointer-events: none;
+      opacity: 0.14;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 400'%3E%3Cpath d='M0 320 C140 300 220 270 320 250 C430 230 520 250 620 230 C730 210 820 170 940 180 C1080 190 1160 240 1280 225 C1390 210 1490 170 1600 160' fill='none' stroke='%238f3b34' stroke-width='20' stroke-linecap='round'/%3E%3Crect x='290' y='220' width='28' height='62' rx='3' fill='%238f3b34'/%3E%3Crect x='612' y='201' width='28' height='62' rx='3' fill='%238f3b34'/%3E%3Crect x='930' y='152' width='28' height='62' rx='3' fill='%238f3b34'/%3E%3Crect x='1262' y='196' width='28' height='62' rx='3' fill='%238f3b34'/%3E%3C/svg%3E");
+      z-index: 0;
     }
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    .wrap { width: min(var(--max), 92vw); margin: 0 auto; }
+    .wrap { width: min(var(--max), 92vw); margin: 0 auto; position: relative; z-index: 1; }
 
     .nav {
       position: sticky;
