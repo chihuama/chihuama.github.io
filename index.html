@@ -105,6 +105,17 @@
       display: block;
       border-bottom: 1px solid var(--border);
     }
+    .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .gallery-card { padding: 10px; }
+    .gallery-card img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: auto;
+      object-fit: contain;
+      border-bottom: none;
+      border-radius: 10px;
+      display: block;
+    }
     .card-body { padding: 14px; }
     .card h3 { margin: 0 0 8px; font-size: 1.03rem; }
     .card p { margin: 0 0 10px; color: var(--muted); font-size: .94rem; }
@@ -142,6 +153,7 @@
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; }
       .projects { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .portrait { max-width: 220px; }
     }
   </style>
@@ -256,11 +268,17 @@
     <section id="gallery">
       <h2>Gallery</h2>
       <p class="lede">A few snapshots and creative moments outside work.</p>
-      <div class="grid projects">
-        <article class="card"><img src="img/gallery/elephant.jpg" alt="Gallery image" /></article>
-        <article class="card"><img src="img/gallery/horse1.jpg" alt="Gallery image" /></article>
-        <article class="card"><img src="img/gallery/lion.jpg" alt="Gallery image" /></article>
-        <article class="card"><img src="img/gallery/oil-painting1.jpg" alt="Gallery image" /></article>
+      <div class="grid gallery-grid">
+        <article class="card gallery-card"><img src="img/gallery/elephant.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/fan.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/horse1.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/horse2.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/lion.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/oil-painting1.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/oil-painting2.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/oil-painting4.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/oil-painting5.jpg" alt="Gallery image" /></article>
+        <article class="card gallery-card"><img src="img/gallery/yyy.jpg" alt="Gallery image" /></article>
       </div>
     </section>
 
