@@ -150,6 +150,29 @@
       color: #ffffff;
     }
 
+    .china-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .seal {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: #b7312c;
+      color: #fff4e8;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .5px;
+      box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    }
+
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; }
       .projects { grid-template-columns: 1fr; }
@@ -190,6 +213,10 @@
           <span class="chip">Decision Sciences</span>
           <span class="chip">Applied AI + Data Products</span>
           <span class="chip">Human-Centered Design</span>
+        </div>
+        <div class="china-mark" aria-label="Chinese identity mark">
+          <span class="seal">马</span>
+          <span>Rooted in China · Working globally</span>
         </div>
       </div>
       <img class="portrait" src="img/chihuama.jpg" alt="Portrait of Chihua Ma" />
