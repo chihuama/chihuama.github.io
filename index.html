@@ -12,7 +12,7 @@
       --card: #f8f4eb;
       --text: #1f2430;
       --muted: #5f6675;
-      --accent: #355c9a;
+      --accent: #8f3b34;
       --accent-2: #7aa88f;
       --border: #cfc6b6;
       --max: 1060px;
@@ -22,7 +22,8 @@
     html, body { margin: 0; padding: 0; }
     body {
       font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(1200px 420px at 10% 0%, #e0d7c6 0%, var(--bg) 62%);
+      background: radial-gradient(1200px 420px at 10% 0%, #e0d7c6 0%, var(--bg) 62%),
+                  radial-gradient(700px 240px at 92% 8%, rgba(176, 52, 46, 0.09) 0%, rgba(176, 52, 46, 0) 70%);
       color: var(--text);
       line-height: 1.55;
     }
@@ -150,28 +151,6 @@
       color: #ffffff;
     }
 
-    .china-mark {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: .9rem;
-    }
-    .seal {
-      width: 26px;
-      height: 26px;
-      border-radius: 6px;
-      background: #b7312c;
-      color: #fff4e8;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .5px;
-      box-shadow: 0 1px 0 rgba(0,0,0,.05);
-    }
 
     @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; }
@@ -213,10 +192,6 @@
           <span class="chip">Decision Sciences</span>
           <span class="chip">Applied AI + Data Products</span>
           <span class="chip">Human-Centered Design</span>
-        </div>
-        <div class="china-mark" aria-label="Chinese identity mark">
-          <span class="seal">马</span>
-          <span>Rooted in China · Working globally</span>
         </div>
       </div>
       <img class="portrait" src="img/chihuama.jpg" alt="Portrait of Chihua Ma" />
